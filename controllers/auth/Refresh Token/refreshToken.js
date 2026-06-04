@@ -2,7 +2,7 @@ import User from "../../../models/userModel.js";
 import {
   generateAccessToken,
   generateRefreshToken,
-} from "../../../utils/auth/access - refresh - token.js";
+} from "../../../utils/auth/accessRefreshToken.js";
 import bcrypt from "bcryptjs";
 import { cookieOptions } from "../../../utils/auth/auth.js";
 
@@ -30,7 +30,7 @@ export const refreshToken = async (req, res) => {
     await session.save();
 
     // set cookie
-    res.cookie("refreshToken", newRefreshToken,cookieOptions);
+    res.cookie("refreshToken", newRefreshToken, cookieOptions);
 
     return res.json({
       accessToken: newAccessToken,

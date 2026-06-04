@@ -6,7 +6,7 @@ import UserSession from "../../models/userSessionModel.js";
 import {
   generateAccessToken,
   generateRefreshToken,
-} from "../../utils/auth/access - refresh - token.js";
+} from "../../utils/auth/accessRefreshToken.js";
 
 export const verifyOTP = async (req, res) => {
   try {

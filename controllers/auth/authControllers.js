@@ -16,7 +16,7 @@ import {
 import {
   generateAccessToken,
   generateRefreshToken,
-} from "../../utils/auth/access - refresh - token.js";
+} from "../../utils/auth/accessRefreshToken.js";
 
 // register
 export const register = async (req, res) => {
